@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="2. 分区操作系统出现背景分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：第1阶段：单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接">
+  <meta name="description" content="分区操作系统出现背景分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：第1阶段：单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接口，运">
 <meta property="og:type" content="article">
 <meta property="og:title" content="分区操作系统（Partition Operating System）">
 <meta property="og:url" content="http://example.com/2021/05/29/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/index.html">
 <meta property="og:site_name" content="曹万里的博客">
-<meta property="og:description" content="2. 分区操作系统出现背景分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：第1阶段：单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接">
+<meta property="og:description" content="分区操作系统出现背景分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：第1阶段：单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接口，运">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-29T02:42:42.000Z">
-<meta property="article:modified_time" content="2021-05-29T06:02:14.048Z">
+<meta property="article:modified_time" content="2021-05-29T06:49:27.525Z">
 <meta property="article:author" content="曹万里">
 <meta property="article:tag" content="分区操作系统">
 <meta name="twitter:card" content="summary">
@@ -195,7 +195,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-29 10:42:42 / 修改时间：14:02:14" itemprop="dateCreated datePublished" datetime="2021-05-29T10:42:42+08:00">2021-05-29</time>
+              <time title="创建时间：2021-05-29 10:42:42 / 修改时间：14:49:27" itemprop="dateCreated datePublished" datetime="2021-05-29T10:42:42+08:00">2021-05-29</time>
             </span>
 
           
@@ -209,11 +209,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="2-分区操作系统出现背景"><a href="#2-分区操作系统出现背景" class="headerlink" title="2. 分区操作系统出现背景"></a>2. 分区操作系统出现背景</h2><h3 id="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："><a href="#分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：" class="headerlink" title="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："></a>分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</h3><p><strong>第1阶段：</strong>单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接口，运行在SCM上的应用往往是一个封闭的应用，<font color=red>只需要完成用户的需求的功能即可，没有安全性方面的实现需求。</font></p>
+        <h1 id="分区操作系统出现背景"><a href="#分区操作系统出现背景" class="headerlink" title="分区操作系统出现背景"></a>分区操作系统出现背景</h1><h2 id="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："><a href="#分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：" class="headerlink" title="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："></a>分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</h2><p><strong>第1阶段：</strong>单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接口，运行在SCM上的应用往往是一个封闭的应用，<font color=red>只需要完成用户的需求的功能即可，没有安全性方面的实现需求。</font></p>
 <p><strong>第2阶段：</strong>微控制器（MCU：Micro Controller Unit）阶段。主要技术发展方向是：不断扩展对象系统要求的各种外围电路和接口电路，突显其对象的智能化控制能力。这一阶段主要以嵌入式微处理器为基础、以简单操作系统为核心。嵌入式微处理器的种类繁多，通用性比较弱；系统开销小，效率高。这个阶段CPU只有一种运行模式，与之配套的系统例如uC/OS，FreeRTOS等实时多任务系统，<font color=red>但硬件上仍无法支撑系统安全性的需求，此类实时系统强调系统的功能和性能。</font></p>
 <p><strong>第3阶段：</strong>片上系统（SOC：System-on-a-chip），单个新品上集成完成一个完整的系统。嵌入式系统能够运行于各种不同类型的微处理器上，兼容性好，操作系统的内核小，效果好。比如基于ARM架构的s3c2440，s3c2410，与之配套VxWorks系统。这类CPU至少具有用户模式/系统模式两种运行状态。但是运行在上面的RTOS(例如VxWorks)只在系统模式下运行，<font color=red>虽然系统性能得到保证，但是没有利用CPU提供的两种模式，以及硬件MMU。因此缺少安全性。</font></p>
 <p><strong>第4阶段：</strong>随着制造技术的进步，嵌入式处理器的性能也接近或达到PC处理器的性能。嵌入式CPU性能高速发展，完全满足一种新的软件系统架构，其利用处理器的不同运行模式，以及硬件MMU机制在实现系统自身安全性的同时，也可以满足用户对性能的需求。在这种条件下，分区操作系统的先行者是运行在航空电子领域的IMA系统，其早在1997年便提出了ARINC653标准，为IMA的需求进行了定义，提出基于时空域的分区系统。</p>
-<h3 id="从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。"><a href="#从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。" class="headerlink" title="从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。"></a>从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。</h3><p><strong>前后台系统</strong>其实没有操作系统，系统中只运行一个无限主循环，没有多任务的概念，但是通过中断服务程序响应外部事件。在前后台系统中，对外部时间的实时响应特性应从两方面来看：<em>1. 中断延迟时间：主循环一般保持中断开放状态，因此前后台系统的中断响应非常快，允许嵌套，中断延迟时间特别短；2. 中断响应时间：需要经历一次主循环才能对中断服务程序中采集的外部请求进行处理，因此系统响应时间决定于主循环周期。</em></p>
+<h2 id="从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。"><a href="#从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。" class="headerlink" title="从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。"></a>从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。</h2><p><strong>前后台系统</strong>其实没有操作系统，系统中只运行一个无限主循环，没有多任务的概念，但是通过中断服务程序响应外部事件。在前后台系统中，对外部时间的实时响应特性应从两方面来看：<em>1. 中断延迟时间：主循环一般保持中断开放状态，因此前后台系统的中断响应非常快，允许嵌套，中断延迟时间特别短；2. 中断响应时间：需要经历一次主循环才能对中断服务程序中采集的外部请求进行处理，因此系统响应时间决定于主循环周期。</em></p>
+<p><strong>实时操作系统RTOS</strong>目的是实现对外部时间的实时响应，即在确定的时间内给出相应。必须满足下面4个条件：</p>
+<p>1）可抢占式的优先级调度内核：当一个运行着的任务使一个比它优先级高的任务进入了就绪态，当前任务的CPU使用权被挂起，高优先级的任务立刻得到CPU的使用权。始终保证优先级最高的任务拥有CPU使用权；</p>
+<p>2）中断具有优先级，且中断可嵌套：高优先级的中断可以打断正在执行的低优先级中断处理程序，优先得到执行；</p>
+<p>3）防止优先级反转；</p>
+<p>4）实时操作系统的性能评价指标（中断响应时间和任务切换时间）具有固定上界。</p>
+<p><strong>分区操作系统……</strong></p>
+<h2 id="从前后台系统发展到实时系统，降低了系统的响应时间，提高了系统的可移植性；但是由于传统的RTOS只利用处理器的特权模式，存在以下不足："><a href="#从前后台系统发展到实时系统，降低了系统的响应时间，提高了系统的可移植性；但是由于传统的RTOS只利用处理器的特权模式，存在以下不足：" class="headerlink" title="从前后台系统发展到实时系统，降低了系统的响应时间，提高了系统的可移植性；但是由于传统的RTOS只利用处理器的特权模式，存在以下不足："></a>从前后台系统发展到实时系统，降低了系统的响应时间，提高了系统的可移植性；但是由于传统的RTOS只利用处理器的特权模式，存在以下不足：</h2><p>1）硬件设备的复杂性、多样性导致系统出错频繁</p>
+<p>在现代操作系统中硬件相关代码占到很大的比重，例如Linux内核中大约70%的代码是设备驱动程序。操作系统的开发人员需要熟悉各种硬件体系结构以及外部设备特性，稍有不慎将导致系统崩溃。斯坦福大学的一项研究表明Linux设备驱动缺陷出现的频率比内核的其它部分高出5~7倍以上。另外就VxWorks-5.5而言，其内核稳定性在业界有口皆碑，但是随着硬件平台及外设的不断丰富，在VxWorks-5.5的USB驱动中出现的错误将直接影响到vxWorks-5.5产品的稳定性。</p>
+<p>2）高度并非处理导致严重的资源竞争</p>
+<p>RTOS内核中面临着极为频繁的竞争行为，这样竞争行为是由任务之间、中断之间、以及任务与中断之间对各类共享资源的并发访问和可重入操作引起的，对系统的可靠性带来巨大的威胁，包括原子性破坏、数据一致性破坏、死锁、优先级翻转等。据统计，由竞争引发的错误在RTOS内核中出现的比例远高于其他软件。</p>
+<p>3）由于并行、时序原因引发的错误导致系统故障定位困难</p>
+<p>相对于应用软件而言，RTOS的错误定位难度要高得多。一方面，由于RTOS是整个系统的最底层软件，缺乏其它的软件作为运行支撑，因此对其调试和测试都需要定制的工具才可以完成；另一方面由于RTOS运行的高度并发性、时序相关性导致其错误不易被发现、错误重现难度极大。因此在RTOS设计中如何嵌入观测代码、以便有效采集系统运行状态及相关数据，以便重现系统运行错误现场和运行过程，将显得极为重要。</p>
+<p>4）隔离和包含手段仍显薄弱</p>
+<p>各个应用程序在保障自身运行正确性和安全性外，还需要防止在其它模块发生错误之后可以不受错误级联反应的影响。因此需要RTOS提供一套有效的隔离与保护机制来限制错误的扩散和蔓延。现有的隔离和保护手段主要是借助于MMU和MPU对地址空间进行保护，存在保护力度大、资源消耗多、性能影响大等缺陷，仍缺乏一套有效的软硬件结合的隔离手段与机制。</p>
+<p>但是随着处理器性能的提高，以及互联网的出现；如何在保证系统功能和性能的同时，具有Safety和Security上的安全性，越发显得十分重要。尤其近年来嵌入式领域多核处理器的广泛应用，支持多核的分区系统可以通过内核来配置分区支持AMP和SMP方式，在保证系统吞吐量和响应时间的同时，具有Safety和Security上的安全性，因此具有巨大的技术优势。</p>
 
     </div>
 
@@ -294,7 +309,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%87%BA%E7%8E%B0%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">2. 分区操作系统出现背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%B5%8C%E5%85%A5%E5%BC%8FCPU%E8%AE%BE%E8%AE%A1%E6%B0%B4%E5%B9%B3%E5%8F%91%E5%B1%95%E5%88%B0%E4%B8%80%E5%AE%9A%E7%A8%8B%E5%BA%A6%E7%9A%84%E7%BB%93%E6%9E%9C%EF%BC%8C%E5%BA%94%E7%94%A8%E4%BA%8E%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A2%86%E5%9F%9F%E7%9A%84CPU%E5%8F%91%E5%B1%95%E6%B0%B4%E5%B9%B3%E5%8F%AF%E4%BB%A5%E5%88%86%E4%B8%BA4%E4%B8%AA%E9%98%B6%E6%AE%B5%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B%E6%9D%A5%E8%AF%B4%EF%BC%8C%E5%85%B6%E7%BB%8F%E5%8E%86%E4%BA%86%E5%89%8D%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%E3%80%81%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F%E3%80%81%E5%88%86%E5%8C%BA%E7%B3%BB%E7%BB%9F%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5%E3%80%82"><span class="nav-number">1.2.</span> <span class="nav-text">从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%87%BA%E7%8E%B0%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">分区操作系统出现背景</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%B5%8C%E5%85%A5%E5%BC%8FCPU%E8%AE%BE%E8%AE%A1%E6%B0%B4%E5%B9%B3%E5%8F%91%E5%B1%95%E5%88%B0%E4%B8%80%E5%AE%9A%E7%A8%8B%E5%BA%A6%E7%9A%84%E7%BB%93%E6%9E%9C%EF%BC%8C%E5%BA%94%E7%94%A8%E4%BA%8E%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A2%86%E5%9F%9F%E7%9A%84CPU%E5%8F%91%E5%B1%95%E6%B0%B4%E5%B9%B3%E5%8F%AF%E4%BB%A5%E5%88%86%E4%B8%BA4%E4%B8%AA%E9%98%B6%E6%AE%B5%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B%E6%9D%A5%E8%AF%B4%EF%BC%8C%E5%85%B6%E7%BB%8F%E5%8E%86%E4%BA%86%E5%89%8D%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%E3%80%81%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F%E3%80%81%E5%88%86%E5%8C%BA%E7%B3%BB%E7%BB%9F%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5%E3%80%82"><span class="nav-number">1.2.</span> <span class="nav-text">从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8E%E5%89%8D%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%88%B0%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F%EF%BC%8C%E9%99%8D%E4%BD%8E%E4%BA%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%93%8D%E5%BA%94%E6%97%B6%E9%97%B4%EF%BC%8C%E6%8F%90%E9%AB%98%E4%BA%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%8F%AF%E7%A7%BB%E6%A4%8D%E6%80%A7%EF%BC%9B%E4%BD%86%E6%98%AF%E7%94%B1%E4%BA%8E%E4%BC%A0%E7%BB%9F%E7%9A%84RTOS%E5%8F%AA%E5%88%A9%E7%94%A8%E5%A4%84%E7%90%86%E5%99%A8%E7%9A%84%E7%89%B9%E6%9D%83%E6%A8%A1%E5%BC%8F%EF%BC%8C%E5%AD%98%E5%9C%A8%E4%BB%A5%E4%B8%8B%E4%B8%8D%E8%B6%B3%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">从前后台系统发展到实时系统，降低了系统的响应时间，提高了系统的可移植性；但是由于传统的RTOS只利用处理器的特权模式，存在以下不足：</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
