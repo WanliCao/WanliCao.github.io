@@ -20,28 +20,33 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="曹万里的博客">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="2. 分区操作系统出现背景分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：第1阶段：单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="分区操作系统（Partition Operating System）">
+<meta property="og:url" content="http://example.com/2021/05/29/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/index.html">
 <meta property="og:site_name" content="曹万里的博客">
+<meta property="og:description" content="2. 分区操作系统出现背景分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：第1阶段：单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-05-29T02:42:42.000Z">
+<meta property="article:modified_time" content="2021-05-29T06:02:14.048Z">
 <meta property="article:author" content="曹万里">
+<meta property="article:tag" content="分区操作系统">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2021/05/29/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>曹万里的博客</title>
+  <title>分区操作系统（Partition Operating System） | 曹万里的博客</title>
   
 
 
@@ -159,9 +164,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -177,10 +183,9 @@
       <meta itemprop="name" content="曹万里的博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/29/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2/" class="post-title-link" itemprop="url">分区操作系统（Partition Operating System）</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          分区操作系统（Partition Operating System）
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -204,162 +209,39 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="2-分区操作系统出现背景"><a href="#2-分区操作系统出现背景" class="headerlink" title="2. 分区操作系统出现背景"></a>2. 分区操作系统出现背景</h2><h3 id="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："><a href="#分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：" class="headerlink" title="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："></a>分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</h3><p><strong>第1阶段：</strong>单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接口，运行在SCM上的应用往往是一个封闭的应用，<font color=red>只需要完成用户的需求的功能即可，没有安全性方面的实现需求。</font></p>
+        <h2 id="2-分区操作系统出现背景"><a href="#2-分区操作系统出现背景" class="headerlink" title="2. 分区操作系统出现背景"></a>2. 分区操作系统出现背景</h2><h3 id="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："><a href="#分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：" class="headerlink" title="分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段："></a>分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</h3><p><strong>第1阶段：</strong>单片微型计算机（SCM：Single Chip Microcomputer）阶段。这一阶段的嵌入式系统硬件是单片机，软件停留在无操作系统阶段，采用会变语言实现系统的功能。这阶段的主要特点是：系统结构和功能相对单一、处理效率低、存储容量十分有限，几乎没有用户接口，运行在SCM上的应用往往是一个封闭的应用，<font color=red>只需要完成用户的需求的功能即可，没有安全性方面的实现需求。</font></p>
 <p><strong>第2阶段：</strong>微控制器（MCU：Micro Controller Unit）阶段。主要技术发展方向是：不断扩展对象系统要求的各种外围电路和接口电路，突显其对象的智能化控制能力。这一阶段主要以嵌入式微处理器为基础、以简单操作系统为核心。嵌入式微处理器的种类繁多，通用性比较弱；系统开销小，效率高。这个阶段CPU只有一种运行模式，与之配套的系统例如uC/OS，FreeRTOS等实时多任务系统，<font color=red>但硬件上仍无法支撑系统安全性的需求，此类实时系统强调系统的功能和性能。</font></p>
 <p><strong>第3阶段：</strong>片上系统（SOC：System-on-a-chip），单个新品上集成完成一个完整的系统。嵌入式系统能够运行于各种不同类型的微处理器上，兼容性好，操作系统的内核小，效果好。比如基于ARM架构的s3c2440，s3c2410，与之配套VxWorks系统。这类CPU至少具有用户模式/系统模式两种运行状态。但是运行在上面的RTOS(例如VxWorks)只在系统模式下运行，<font color=red>虽然系统性能得到保证，但是没有利用CPU提供的两种模式，以及硬件MMU。因此缺少安全性。</font></p>
 <p><strong>第4阶段：</strong>随着制造技术的进步，嵌入式处理器的性能也接近或达到PC处理器的性能。嵌入式CPU性能高速发展，完全满足一种新的软件系统架构，其利用处理器的不同运行模式，以及硬件MMU机制在实现系统自身安全性的同时，也可以满足用户对性能的需求。在这种条件下，分区操作系统的先行者是运行在航空电子领域的IMA系统，其早在1997年便提出了ARINC653标准，为IMA的需求进行了定义，提出基于时空域的分区系统。</p>
 <h3 id="从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。"><a href="#从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。" class="headerlink" title="从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。"></a>从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。</h3><p><strong>前后台系统</strong>其实没有操作系统，系统中只运行一个无限主循环，没有多任务的概念，但是通过中断服务程序响应外部事件。在前后台系统中，对外部时间的实时响应特性应从两方面来看：<em>1. 中断延迟时间：主循环一般保持中断开放状态，因此前后台系统的中断响应非常快，允许嵌套，中断延迟时间特别短；2. 中断响应时间：需要经历一次主循环才能对中断服务程序中采集的外部请求进行处理，因此系统响应时间决定于主循环周期。</em></p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"># 分区操作系统</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/28/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="曹万里">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="曹万里的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/28/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/" class="post-title-link" itemprop="url">分区操作系统（Partition Operating System）</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-05-28 19:22:15 / 修改时间：19:49:00" itemprop="dateCreated datePublished" datetime="2021-05-28T19:22:15+08:00">2021-05-28</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1-什么是分区操作系统"><a href="#1-什么是分区操作系统" class="headerlink" title="1. 什么是分区操作系统"></a>1. 什么是分区操作系统</h2><p>分区（Partition）的概念由John Rushby于1999年首次提出，其定义为“The purpose of partitioning is fault containment: a failure in one partition must not propagate to cause failure in another partition.” 中文的意思是“分区的目的是容错：一个分区中的故障不能传递给其他分区，并导致其他分区故障。”</p>
-<p>分区定义了两个重要的属性：空间隔离和时间隔离。</p>
-<p><strong>空间隔离：</strong>分区必须保证一个分区的软件不会改变另一个分区的软件，或者修改另外分区软件的数据；</p>
-<p><strong>时间隔离：</strong>分区必须确保一个分区中的软件所接收到的共享资源的服务不会影响到另一个分区中使用该资源的软件。</p>
-<p>分区操作系统标准的定义是通过分区的概念实现了应用之间的时空隔离，达到容错和简化验证的目的；又通过采用为不同分区设定不同的安全级别的多级安全（MLS，Muti-Level Security）架构，为系统提供安全性和可靠性的基础支撑，避免操作系统中访问控制机制被篡改、绕过；使得各个安全关键任务独立运行，通过受控的消息机制进行交互，有效保证各个应用和各部分数据的独立安全性。</p>
-<p>分区实时操作系统最重要的特性是可靠性，可靠性是指系统在异常的条件下，仍然能够工作的能力。</p>
-<p>可靠性有两层含义：容错能力和恢复能力。容错能力是指应用发生故障时，系统不出错的能力，对于应用于航空航天、武器领域的高风险系统，容错设计非常重要，分区实时系统最重要的特性就是容错性。恢复能力是指软件发生故障后，重新运行后恢复到没有发生故障前的状态的能力。恢复不及容错那么健壮。<em>举个例子：某个人挨了坏蛋的一顿拳脚，特别健壮的人一点事儿都没有，表示容错能力强；比较健壮的人，虽然被打倒在地，过了一会还能爬起来，除了皮肉之痛外，倒也不用去医院，表示恢复能力比较强；而虚弱的人可能短期恢复不过来，得在病床上躺很久。</em>恢复能力也是很有价值的，Microsoft公司早期的视窗系统，比如Windows 3.x和Windows 9x，动辄死机，其容错性比较差，但它们的恢复能力还是不错的，机器重启后，一般都能够正常运行，看在这个份上，人们还是愿意将就着用。</p>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/05/28/%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1/" rel="prev" title="分区操作系统（Partition Operating System）">
+      <i class="fa fa-chevron-left"></i> 分区操作系统（Partition Operating System）
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="曹万里">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="曹万里的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/05/14/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-05-14 17:05:59" itemprop="dateCreated datePublished" datetime="2021-05-14T17:05:59+08:00">2021-05-14</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -412,6 +294,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%87%BA%E7%8E%B0%E8%83%8C%E6%99%AF"><span class="nav-number">1.</span> <span class="nav-text">2. 分区操作系统出现背景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E5%8C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%98%AF%E5%B5%8C%E5%85%A5%E5%BC%8FCPU%E8%AE%BE%E8%AE%A1%E6%B0%B4%E5%B9%B3%E5%8F%91%E5%B1%95%E5%88%B0%E4%B8%80%E5%AE%9A%E7%A8%8B%E5%BA%A6%E7%9A%84%E7%BB%93%E6%9E%9C%EF%BC%8C%E5%BA%94%E7%94%A8%E4%BA%8E%E5%B5%8C%E5%85%A5%E5%BC%8F%E9%A2%86%E5%9F%9F%E7%9A%84CPU%E5%8F%91%E5%B1%95%E6%B0%B4%E5%B9%B3%E5%8F%AF%E4%BB%A5%E5%88%86%E4%B8%BA4%E4%B8%AA%E9%98%B6%E6%AE%B5%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">分区操作系统是嵌入式CPU设计水平发展到一定程度的结果，应用于嵌入式领域的CPU发展水平可以分为4个阶段：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E5%B5%8C%E5%85%A5%E5%BC%8F%E8%BD%AF%E4%BB%B6%E7%9A%84%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B%E6%9D%A5%E8%AF%B4%EF%BC%8C%E5%85%B6%E7%BB%8F%E5%8E%86%E4%BA%86%E5%89%8D%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F%E3%80%81%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F%E3%80%81%E5%88%86%E5%8C%BA%E7%B3%BB%E7%BB%9F%E4%B8%89%E4%B8%AA%E9%98%B6%E6%AE%B5%E3%80%82"><span class="nav-number">1.2.</span> <span class="nav-text">从嵌入式软件的发展历程来说，其经历了前后台系统、实时系统、分区系统三个阶段。</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
