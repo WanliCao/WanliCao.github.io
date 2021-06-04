@@ -120,12 +120,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">1</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a>
 
   </li>
   </ul>
@@ -152,6 +152,80 @@
 
           <div class="content index posts-expand">
             
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/04/Office-2019-for-Mac/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="曹万里">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="曹万里的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/04/Office-2019-for-Mac/" class="post-title-link" itemprop="url">Office 2019 for Mac破解</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-04 15:00:36 / 修改时间：15:23:11" itemprop="dateCreated datePublished" datetime="2021-06-04T15:00:36+08:00">2021-06-04</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>276</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>下载并安装 <a target="_blank" rel="noopener" href="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Office_16.24.19041401_Installer.pkg">Office 2019 for mac 安装包</a>；</p>
+<img src="https://res.cloudinary.com/dhhhb7rh6/image/upload/v1622790485/Office for Mac/官方安装包.png" style="zoom:40%;" />
+
+<p>按照提示进行傻瓜式安装</p>
+<p>下载并安装 [Office 2019 for mac 激活工具](<a target="_blank" rel="noopener" href="https://res.cloudinary.com/dhhhb7rh6/raw/upload/v1622790490/Office">https://res.cloudinary.com/dhhhb7rh6/raw/upload/v1622790490/Office</a> for Mac/Microsoft_Office_2019_VL_Serializer_ot7f33.pkg)；</p>
+<img src="https://res.cloudinary.com/dhhhb7rh6/image/upload/v1622790488/Office for Mac/激活工具.png" style="zoom:40%;" />
+
+<p>按照提示进行傻瓜式激活</p>
+<p>Office for Mac的账号登录，跟激活无关，可点击跳过正常使用。具体包含Word, Excel, PowerPoint, Outlook, OneNote五大套件。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
       
   
   
@@ -339,7 +413,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-03 15:07:09" itemprop="dateModified" datetime="2021-06-03T15:07:09+08:00">2021-06-03</time>
+                <time title="修改时间：2021-06-04 15:17:10" itemprop="dateModified" datetime="2021-06-04T15:17:10+08:00">2021-06-04</time>
               </span>
 
           <br>
@@ -363,7 +437,7 @@
           <h1 id="分区操作系统技术实现"><a href="#分区操作系统技术实现" class="headerlink" title="分区操作系统技术实现"></a>分区操作系统技术实现</h1><p>分区操作系统采用嵌入式虚拟化技术实现分区隔离。从虚拟机使用资源角度来看，虚拟机可以划分为两类：Type 1虚拟机直接运行在裸的硬件上，被称为裸机虚拟机或者本地虚拟机（Host OS）；Type 2虚拟机运行在一个操作系统上，例如VMware、Virtual box等，被称为客户操作系统（Guest OS）。</p>
 <p>分区操作系统采用Type 1虚拟机技术实现分区的时空隔离，目前分成两个方向发展：一个侧重于Safety安全，以实现一个容错系统（Fault Tolerate System），比较典型的是实现航空ARINC 653标准的系统，比如VxWorks653、Integrity178B RTOS；另一个侧重于Security安全，侧重于信息安全、防黑客攻击，比较典型的是VxWorks MILS,Lynx-Secure等。两个方向存在交集。</p>
 <p>我们把采用Type 1 Hypervisor技术实现的分区系统内核也称为分离内核（Separtation Kernel）架构，如图所示：</p>
-<img src="https://res.cloudinary.com/dhhhb7rh6/image/upload/v1622364503/分离内核架构图_xiabhx.png" style="zoom:50%;" />
+<img src="https://res.cloudinary.com/dhhhb7rh6/image/upload/v1622364503/分离内核架构图" style="zoom:50%;" />
 
 <p>分离内核架构的操作系统采用分区的概念隔离硬件资源、系统软件、用户应用，并严格控制硬件组件和不同分区应用的信息流，以实现整个系统的Safety安全性和Security安全性。</p>
 
@@ -693,14 +767,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
